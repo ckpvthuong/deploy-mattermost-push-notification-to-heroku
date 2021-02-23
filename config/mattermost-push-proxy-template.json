@@ -23,11 +23,11 @@
     "AndroidPushSettings":[
         {
             "Type":"android",
-            "AndroidApiKey":""
+            "AndroidApiKey":"${SERVER_KEY}"
         },
         {
             "Type":"android_rn",
-            "AndroidApiKey":""
+            "AndroidApiKey":"${SERVER_KEY}"
         }
     ],
     "EnableConsoleLog": true,
