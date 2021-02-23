@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo "Mattermost push notification server"
+
+exit 0

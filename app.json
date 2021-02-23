@@ -1,0 +1,20 @@
+{
+  "name": "Mattermost push notification",
+  "description": "Mattermost push notification.",
+  "keywords": ["mattermost"],
+  "success_url": "/",
+  "logo": "https://www.mattermost.org/wp-content/uploads/2016/04/icon_WS.png",
+  "env": {
+    "BUILDPACK_URL": "http://github.com/kr/heroku-buildpack-inline.git",
+    "MATTERMOST_PUSH_DOWNLOAD_URI": {
+        "description": "The URI to the compiled Mattermost push notification server.",
+        "required": true,
+        "value": "https://github.com/mattermost/mattermost-push-proxy/releases/download/v5.22.4/mattermost-push-proxy.tar.gz"
+    },
+    "SERVER_KEY": {
+        "description": "Firebase cloud message key. More info: https://developers.mattermost.com/contribute/mobile/push-notifications/service/#set-up-mattermost-push-notification-service-to-send-android-push-notifications",
+        "required": true,
+        "value": ""
+    }
+  }
+}
